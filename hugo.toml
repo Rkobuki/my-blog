@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = "Kobuki's Blog"
 theme = "ananke"
 
+# サマリーの長さを設定（単語数）
+summaryLength = 30
+
 [params]
   mainSections = ["posts"]  # 投稿があるディレクトリ名
   recent_posts_number = 5   # 表示する投稿数（デフォルトは3）
