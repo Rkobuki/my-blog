@@ -29,11 +29,31 @@ categories:
 ---
 ```
 
-## Markdown記法の基本
+## 主要なファイルとディレクトリ
 
-- 見出し: `#`, `##`, `###`
-- リスト: `- ` または `1. `
-- リンク: `[text](url)`
-- 画像: `![alt](url)`
-- コードブロック: ``` ``` ```
-- 強調: `**太字**`, `*斜体*`
+```
+my-blog/
+├── hugo.toml          # Hugoの設定ファイル
+├── content/           # 記事コンテンツ
+│   ├── _index.md      # トップページ
+│   └── posts/         # 記事ディレクトリ
+│       └── first-post.md  # サンプル記事
+├── themes/            # テーマディレクトリ
+│   └── ananke/        # Anankeテーマ
+├── assets/            # 静的アセット（CSS/JSなど）
+├── public/            # ビルド出力ディレクトリ
+└── _site/             # 開発用ビルド出力
+    ├── index.html     # ビルドされたトップページ
+    └── posts/         # ビルドされた記事
+        └── first-post/
+            └── index.html
+```
+
+### 主要ファイルの説明
+
+- **hugo.toml**: サイト全体の設定ファイル
+- **content/**: 記事を管理するディレクトリ
+- **themes/ananke/**: 使用しているHugoテーマ
+- **assets/**: カスタムCSSやJavaScriptファイル
+- **_site/**: 開発サーバー用のビルド出力
+- **public/**: 本番用ビルド出力
