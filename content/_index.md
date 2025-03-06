@@ -1,11 +1,12 @@
 ---
-title: "私のブログへようこそ"
+title: "備忘録"
 date: 2025-03-07T00:29:40+09:00
 draft: false
 ---
 
-## ようこそ！
 
-これはHugoで作成したシンプルなブログです。
+これは Cloudflare Pages + Hugo で作った[kobuki](https://x.com/RiKobuki)
+のブログです。
 
-[最初の投稿](/posts/first-post/)を読んでみてください。
+
+以下に最新の投稿から順に表示しています。興味のある記事をクリックしてお読みください。

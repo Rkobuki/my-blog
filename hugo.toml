@@ -1,4 +1,11 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'HOME'
 theme = "ananke"
+
+[params]
+  mainSections = ["posts"]  # 投稿があるディレクトリ名
+  recent_posts_number = 5   # 表示する投稿数（デフォルトは3）
+
+[params.ananke]
+  show_recent_posts = true  # 最近の投稿を表示
