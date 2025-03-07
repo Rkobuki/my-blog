@@ -1,5 +1,5 @@
 # my-blog
-kobuki`s blog
+kobuki's blog
 
 ## 記事の投稿方法
 
