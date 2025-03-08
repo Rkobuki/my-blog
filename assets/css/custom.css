@@ -1,0 +1,18 @@
+/* メインコンテンツの余白を調整 */
+.main {
+    max-width: 600px;  /* 記事の最大幅を設定 */
+    margin: 0 auto;    /* 中央寄せ */
+    padding: 20px;     /* 余白を追加 */
+}
+
+/* 記事一覧の各記事のスタイル調整 */
+.relative.w-100.mb4.bg-white {
+    padding: 1rem;  /* 記事内の余白 */
+}
+
+/* サイドバーのカテゴリーとタグのスタイル調整 */
+.mb5, aside > div {
+    padding: 1rem;  /* 余白を追加 */
+    border-radius: 0.25rem;  /* 角を丸く */
+    margin-bottom: 1rem;  /* 下部の余白 */
+}

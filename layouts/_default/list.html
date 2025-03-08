@@ -1,51 +1,57 @@
 {{ define "main" }}
   <article class="pa3 pa4-ns nested-copy-line-height">
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
+    <section class="cf ph3 ph5-l pv3 pv4-l f5 center lh-copy {{ $.Param "text_color" | default "black" }}">
       {{- .Content -}}
     </section>
-    <div class="flex flex-wrap">
-      <!-- Main content - Article list -->
-      <section class="w-100 w-70-l pr3-l">
-        <div class="flex-ns flex-wrap justify-around mt5">
+    <!-- mw9 = max-width 96rem, center = margin-left auto, margin-right auto, ph3-ns = padding-left, padding-right 1rem (not-small screens) -->
+    <div class="mw9 center ph3-ns">
+      <!-- cf = clearfix, ph2-ns = padding-left, padding-right 0.5rem (not-small screens) -->
+      <div class="cf ph2-ns">
+        <!-- Main content - Article list -->
+        <!-- fl = float left, w-100 = width 100%, w-70-l = width 70% (large screens), ph2-ns = padding-left, padding-right 0.5rem (not-small screens) -->
+        <section class="fl w-100 w-70-l ph2-ns">
+          <div class="flex-ns flex-wrap justify-around mt5">
           {{ range .Paginator.Pages }}
             <div class="relative w-100 mb4 bg-white">
               {{ .Render "summary" }}
             </div>
           {{ end }}
-        </div>
-        {{- template "_internal/pagination.html" . -}}
-      </section>
-      
-      <!-- Sidebar - Categories and Tags -->
-      <aside class="w-100 w-30-l pl3-l mt5">
-        <!-- Categories -->
-        <div class="mb5">
-          <h2 class="f3">カテゴリー</h2>
-          <ul class="list pl0">
-            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-              <li class="mb2">
-                <a href="{{ "categories/" | relLangURL }}{{ $name | urlize }}" class="link blue hover-black">
-                  {{ $name }} ({{ $taxonomy.Count }})
-                </a>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
+          </div>
+          {{- template "_internal/pagination.html" . -}}
+        </section>
         
-        <!-- Tags -->
-        <div>
-          <h2 class="f3">タグ</h2>
-          <ul class="list pl0">
-            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-              <li class="mb2">
-                <a href="{{ "tags/" | relLangURL }}{{ $name | urlize }}" class="link blue hover-black">
-                  {{ $name }} ({{ $taxonomy.Count }})
-                </a>
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-      </aside>
+        <!-- Sidebar - Categories and Tags -->
+        <!-- fl = float left, w-100 = width 100%, w-30-l = width 30% (large screens), ph2-ns = padding-left, padding-right 0.5rem (not-small screens) -->
+        <aside class="fl w-100 w-30-l ph2-ns mt5">
+          <!-- Categories -->
+          <div class="mb5">
+            <h2 class="f3">カテゴリー</h2>
+            <ul class="list pl0">
+              {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                <li class="mb2">
+                  <a href="{{ "categories/" | relLangURL }}{{ $name | urlize }}" class="link blue hover-black">
+                    {{ $name }} ({{ $taxonomy.Count }})
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+          
+          <!-- Tags -->
+          <div>
+            <h2 class="f3">タグ</h2>
+            <ul class="list pl0">
+              {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                <li class="mb2">
+                  <a href="{{ "tags/" | relLangURL }}{{ $name | urlize }}" class="link blue hover-black">
+                    {{ $name }} ({{ $taxonomy.Count }})
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+        </aside>
+      </div>
     </div>
   </article>
 {{ end }}

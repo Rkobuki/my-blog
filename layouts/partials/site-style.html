@@ -1,0 +1,12 @@
+{{ with partialCached "func/style/GetMainCSS.html" "style/GetMainCSS" }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" >
+{{ end }}
+
+{{ range site.Params.custom_css }}
+  {{ with partialCached "func/style/GetResource.html" . . }}{{ else }}
+    <link rel="stylesheet" href="{{ relURL (.) }}">
+  {{ end }}
+{{ end }}
+
+{{ $customCSS := resources.Get "css/custom.css" | minify}}
+<link rel="stylesheet" href="{{ $customCSS.RelPermalink }}">
