@@ -1,0 +1,51 @@
+{{ define "main" }}
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
+      {{- .Content -}}
+    </section>
+    <div class="flex flex-wrap">
+      <!-- Main content - Article list -->
+      <section class="w-100 w-70-l pr3-l">
+        <div class="flex-ns flex-wrap justify-around mt5">
+          {{ range .Paginator.Pages }}
+            <div class="relative w-100 mb4 bg-white">
+              {{ .Render "summary" }}
+            </div>
+          {{ end }}
+        </div>
+        {{- template "_internal/pagination.html" . -}}
+      </section>
+      
+      <!-- Sidebar - Categories and Tags -->
+      <aside class="w-100 w-30-l pl3-l mt5">
+        <!-- Categories -->
+        <div class="mb5">
+          <h2 class="f3">カテゴリー</h2>
+          <ul class="list pl0">
+            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+              <li class="mb2">
+                <a href="{{ "categories/" | relLangURL }}{{ $name | urlize }}" class="link blue hover-black">
+                  {{ $name }} ({{ $taxonomy.Count }})
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+        
+        <!-- Tags -->
+        <div>
+          <h2 class="f3">タグ</h2>
+          <ul class="list pl0">
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+              <li class="mb2">
+                <a href="{{ "tags/" | relLangURL }}{{ $name | urlize }}" class="link blue hover-black">
+                  {{ $name }} ({{ $taxonomy.Count }})
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </article>
+{{ end }}
