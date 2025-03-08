@@ -2,6 +2,8 @@
 title: "Blogの立ち上げ ～Cloudflare Pages × Hugo～"
 date: 2025-03-07T00:29:40+09:00
 draft: false
+tags: ["Cloudflare", "Hugo", "サーバーレス"]
+categories: ["技術"]
 ---
 
 
