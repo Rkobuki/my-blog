@@ -5,8 +5,6 @@ draft: false
 ---
 
 
-これは Cloudflare Pages + Hugo で作った[kobuki](https://x.com/RiKobuki)
-のブログです。
+Cloudflare Pages + Hugo で作った[kobuki](https://x.com/RiKobuki)のブログです。
 
-
-以下に最新の投稿から順に表示しています。興味のある記事をクリックしてお読みください。
+本、技術、ラグビー、鹿児島、キノコ、ハイキング、水泳、野球
