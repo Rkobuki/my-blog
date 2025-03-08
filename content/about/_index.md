@@ -21,7 +21,7 @@ date: 2025-03-08
 
 
 ## かかわった記事
-[CEDECへ行こう！ ～CEDEC2024参加レポート]([#](https://gihyo.jp/article/2024/11/cedec2024-report))    （2024、執筆）
+[CEDECへ行こう！ ～CEDEC2024参加レポート](https://gihyo.jp/article/2024/11/cedec2024-report)    （2024、執筆）
 
 [連載　CPaaSを使ったアプリケーション開発](https://gihyo.jp/list/group/CPaaS%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E9%96%8B%E7%99%BA#rt:/article/2024/08/cpaas-01)   （2024、企画）
 
