@@ -7,4 +7,4 @@ draft: false
 
 Cloudflare Pages + Hugo で作った[kobuki](https://x.com/RiKobuki)のブログです。
 
-本、技術、ラグビー、鹿児島、キノコ、ハイキング、水泳、野球
+本、技術、趣味、思ったことのはなし
