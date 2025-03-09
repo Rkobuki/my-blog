@@ -1,6 +1,6 @@
 ---
 title: "プロフィール"
-date: 2025-03-08
+date: 2025-03-09
 ---
 
 ## 自己紹介
@@ -29,3 +29,4 @@ date: 2025-03-08
 ## SNS & 連絡先
 [![GitHub](https://img.shields.io/badge/-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Rkobuki)
 [![X](https://img.shields.io/badge/-000000?style=flat-square&logo=x&logoColor=white)](https://twitter.com/your-twitter-handle)
+[![Qiita](https://img.shields.io/badge/-55C500?style=flat-square&logo=qiita&logoColor=white)](https://qiita.com/Rkobuki)
