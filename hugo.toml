@@ -18,6 +18,11 @@ summaryLength = 30
 [params.ananke]
   show_recent_posts = true  # 最近の投稿を表示
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # HTMLタグを許可する設定
+
 [[menu.main]]
   identifier = "about"
   name = "プロフィール"
