@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = "Kobuki's Blog"
 theme = "ananke"
 
+[pagination]
+  pagerSize = 5  # 1ページあたりの記事数
+
 # サマリーの長さを設定（単語数）
 summaryLength = 30
 
