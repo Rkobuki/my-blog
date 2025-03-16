@@ -7,4 +7,4 @@ draft: false
 
 Cloudflare Pages + Hugo で作った[kobuki](https://x.com/RiKobuki)のブログです。
 
-本、技術、趣味、思ったことのはなし
+読んだ本の話、勉強したことのメモを書いていきたい。
