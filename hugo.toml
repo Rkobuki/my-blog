@@ -27,7 +27,19 @@ summaryLength = 30
       unsafe = true  # HTMLタグを許可する設定
 
 [[menu.main]]
+  identifier = "home"
+  name = "直近の投稿"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "posts"
+  name = "記事一覧"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
   identifier = "about"
   name = "プロフィール"
   url = "/about/"
-  weight = 2
+  weight = 3
