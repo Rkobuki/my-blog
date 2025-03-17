@@ -1,5 +1,5 @@
 # my-blog
-kobuki's blog
+[kobuki's blog](https://rikuro-kobuki.com/)
 
 ## 記事の投稿方法
 
@@ -10,9 +10,8 @@ kobuki's blog
 
 ## ファイル命名規則
 
-- 例: `2025-03-07-new-post.md`
+- 例: `20250307-x.md`
 - 日付は投稿日をYYYY-MM-DD形式で記述
-- タイトルはハイフン区切りの英数字で記述
 
 ## Front Matterの記述例
 
