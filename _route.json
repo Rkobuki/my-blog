@@ -7,7 +7,9 @@
         "headers": {
           "Content-Type": "text/css"
         },
-        "static": true
+        "origin": {
+          "hostname": "rikuro-kobuki.com"
+        }
       },
       {
         "pattern": "/rust-md-checker",
