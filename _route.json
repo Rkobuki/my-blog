@@ -5,7 +5,10 @@
     "routes": [
       {
         "pattern": "/rust-md-checker/*",
-        "worker": "rust-md-checker"
+        "worker": {
+          "name": "rust-md-checker",
+          "binding": "RUST_MD_CHECKER"
+        }
       }
     ]
   }
