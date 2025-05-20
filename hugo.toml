@@ -26,6 +26,10 @@ summaryLength = 30
     [markup.goldmark.renderer]
       unsafe = true  # HTMLタグを許可する設定
 
+# 404ページの設定
+[permalinks]
+  posts = "/posts/:year/:month/:day/:slug/"
+
 [[menu.main]]
   identifier = "home"
   name = "直近の投稿"
