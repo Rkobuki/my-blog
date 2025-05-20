@@ -3,6 +3,13 @@
     "include": ["/*"],
     "routes": [
       {
+        "pattern": "/css/*",
+        "headers": {
+          "Content-Type": "text/css"
+        },
+        "static": true
+      },
+      {
         "pattern": "/rust-md-checker",
         "worker": {
           "name": "rust-md-checker",
