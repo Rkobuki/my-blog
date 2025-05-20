@@ -1,5 +1,11 @@
 {
     "version": 1,
     "include": ["/*"],
-    "exclude": ["/rust-md-checker/*"]
+    "exclude": ["/rust-md-checker/*"],
+    "routes": [
+      {
+        "pattern": "/rust-md-checker/*",
+        "worker": "rust-md-checker"
+      }
+    ]
   }
