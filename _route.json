@@ -4,6 +4,13 @@
     "exclude": ["/rust-md-checker/*"],
     "routes": [
       {
+        "pattern": "/rust-md-checker",
+        "worker": {
+          "name": "rust-md-checker",
+          "binding": "RUST_MD_CHECKER"
+        }
+      },
+      {
         "pattern": "/rust-md-checker/*",
         "worker": {
           "name": "rust-md-checker",
