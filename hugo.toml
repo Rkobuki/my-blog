@@ -53,3 +53,9 @@ summaryLength = 30
   name = "プロフィール"
   url = "/about/"
   weight = 3
+
+[[menu.main]]
+  identifier = "services"
+  name = "つくってみた！"
+  url = "/services/"
+  weight = 4
