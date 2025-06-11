@@ -28,6 +28,8 @@ date: 2025-03-09
 
 [連載　CPaaSを使ったアプリケーション開発](https://gihyo.jp/list/group/CPaaS%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E9%96%8B%E7%99%BA#rt:/article/2024/08/cpaas-01)   （2024、企画）
 
+## LT
+[Cloudflareで実現する　はじめてのホスティング](https://speakerdeck.com/kobuki/hazimetenohosuteingu)　（2025/6/11、Cloudflare Meet-up Tokyo Vol.8）
 
 ## SNS & 連絡先
 [![GitHub](https://img.shields.io/badge/-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Rkobuki)
